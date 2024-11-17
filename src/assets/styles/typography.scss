@@ -1,0 +1,128 @@
+@import './color.scss';
+
+// ============================== 
+// Font Display Large 
+// ==============================
+@font-face {
+    font-family: 'font-display-large';
+    src: url('../../../public/fonts/SegoeUI-VF/Segoe-UI-Variable-Static-Display-Bold.ttf') format('truetype');
+}
+
+@mixin font-display-large {
+  font-family: 'font-display-large';
+  font-weight: 700;
+  font-size: 52px;
+  color: $tertiary;
+}
+
+
+// ============================== 
+// Font Display Medium
+// ============================== 
+@font-face {
+  font-family: 'font-display-small';
+  src: url('../../../public/fonts/SegoeUI-VF/Segoe-UI-Variable-Static-Display-Semibold.ttf') format('truetype');
+}
+
+@mixin font-display-medium {
+  font-family: 'font-display-small';
+  font-weight: 600;
+  font-size: 32px;
+  color: $on-tertiary;
+}
+
+
+// ============================== 
+// Font Display Small
+// ============================== 
+@font-face {
+  font-family: 'font-display-small';
+  src: url('../../../public/fonts/SegoeUI-VF/SegoeUI-VF.ttf') format('truetype');
+}
+
+@mixin font-display-small {
+  font-family: 'font-display-small';
+  font-weight: 500;
+  font-size: 18px;
+  color: $on-tertiary;
+}
+
+
+// ============================== 
+// Font Title Medium
+// ============================== 
+@font-face {
+  font-family: 'font-title-medium';
+  src: url('../../../public/fonts/SegoeUI-VF/Segoe-UI-Variable-Static-Display-Semibold.ttf') format('truetype');
+}
+
+@mixin font-title-medium {
+  font-family: 'font-title-medium';
+  font-weight: 600;
+  font-size: 22px;
+  color: $tertiary;
+}
+
+
+// ============================== 
+// Font Body Large
+// ============================== 
+@font-face {
+  font-family: 'font-body-large';
+  src: url('../../../public/fonts/SegoeUI-VF/Segoe-UI-Variable-Static-Display-Bold.ttf') format('truetype');
+}
+
+@mixin font-body-large {
+  font-family: 'font-body-large';
+  font-weight: 700;
+  font-size: 17px;
+  color: $tertiary;
+}
+
+
+// ============================== 
+// Font Body Medium
+// ============================== 
+@font-face {
+  font-family: 'font-body-medium';
+  src: url('../../../public/fonts/SegoeUI-VF/SegoeUI-VF.ttf') format('truetype');
+}
+
+@mixin font-body-medium {
+  font-family: 'font-body-medium';
+  font-weight: 400;
+  font-size: 16px;
+  color: $on-tertiary;
+}
+
+
+// ============================== 
+// Font Body Small
+// ============================== 
+@font-face {
+  font-family: 'font-body-small';
+  src: url('../../../public/fonts/SegoeUI-VF/Segoe-UI-Variable-Static-Display-Bold.ttf') format('truetype');
+}
+
+@mixin font-body-small {
+  font-family: 'font-body-small';
+  font-weight: 700;
+  font-size: 14px;
+  color: $tertiary;
+}
+
+// ============================== 
+// Font Label Medium
+// ============================== 
+@font-face {
+  font-family: 'font-label-medium';
+  src: url('../../../public/fonts/SegoeUI-VF/Segoe-UI-Variable-Static-Display-Bold.ttf') format('truetype');
+}
+
+@mixin font-label-medium {
+  font-family: 'font-label-medium';
+  font-weight: 700;
+  font-size: 14px;
+  color: $prymariry;
+}
+

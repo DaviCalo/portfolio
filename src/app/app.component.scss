@@ -1,0 +1,21 @@
+@import '../assets/styles/typography.scss';
+@import '../assets/styles/color.scss';
+
+
+.container{
+    width: 85vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $surface-bright;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(40px);
+    border-radius: 30px;
+}
+
+h1{
+    all: unset;
+    @include font-title-medium;
+    margin-bottom: 1rem;
+}
