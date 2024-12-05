@@ -40,7 +40,8 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('appNavigation') appNavigation!: ElementRef;
 
   @ViewChild('articleAboutMe') articleAboutMe!: ElementRef; 
-  @ViewChild('articleProject') articleProject!: ElementRef; 
+  @ViewChild('articleProject') articleProject!: ElementRef;
+  @ViewChild('articleexperience') articleExperience!: ElementRef;
 
   ngAfterViewInit(): void {
     if (this.containerRight) {
@@ -52,11 +53,10 @@ export class AppComponent implements AfterViewInit {
   }
 
   onScroll(): void {
-    console.log(this.isNavigationScroll);
-    if(!this.isNavigationScroll) {
+    if(this.isNavigationScroll) {
       const section1Top = this.articleAboutMe.nativeElement.offsetTop; 
       const section2Top = this.articleProject.nativeElement.offsetTop; 
-      // const section3Top = this.section3.nativeElement.offsetTop; 
+      const section3Top = this.articleExperience.nativeElement.offsetTop; 
 
       const scrollPosition = this.containerRight.nativeElement.scrollTop + this.containerRight.nativeElement.clientHeight / 2;
       
@@ -64,23 +64,21 @@ export class AppComponent implements AfterViewInit {
         this.activerNavItem = 1;
       } else if(scrollPosition >= section2Top) {
         this.activerNavItem = 2;
+      } else if(scrollPosition >= section3Top) {
+        this.activerNavItem = 3;
       }
-      console.log(this.activerNavItem);
     }
   }
 
   onClickNavItem(item: number): void {
     this.activerNavItem = item;
-    console.log(this.activerNavItem + " clicked");
   }
 
   onMouseEnterNavigation(): void {
     this.isNavigationScroll = false;
-    console.log(this.isNavigationScroll);
   }
 
   onMouseLeaveNavigation(): void {
     this.isNavigationScroll = true;
-    console.log(this.isNavigationScroll);
   }
 }

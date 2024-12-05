@@ -25,14 +25,17 @@ li, a{
     justify-content: center;
     & a{
         display: grid; 
+        align-items: center;
         grid-template-columns: 1fr 1fr 1fr 1fr  1fr;
     }
     & a svg{
         grid-column: 2;
+        text-align: center;
         grid-column-start: 2;
     }
     & a span{
         grid-column: 4;
+        text-align: center;
         grid-column-start: 4;
     }
 }

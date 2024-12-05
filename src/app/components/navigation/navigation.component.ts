@@ -16,7 +16,7 @@ export class NavigationComponent implements OnChanges {
 
   @ViewChild('aboutmenav', { static: true }) aboutmenav!: ElementRef;
   @ViewChild('projectnav', { static: true }) projectnav!: ElementRef;
-  @ViewChild('contatnav', { static: true }) contatnav!: ElementRef;
+  @ViewChild('experiencenav', { static: true }) experiencenav!: ElementRef;
 
   onClickNav(intem: number): void {
     this.itemSeleted.emit(intem);
@@ -26,11 +26,17 @@ export class NavigationComponent implements OnChanges {
     if (changes['item'].currentValue == 1) {
       this.renderer.addClass(this.aboutmenav.nativeElement, 'activer');
       this.renderer.removeClass(this.projectnav.nativeElement, 'activer');
+      this.renderer.removeClass(this.experiencenav.nativeElement, 'activer');
+
     } else if(changes['item'].currentValue == 2) {
       this.renderer.removeClass(this.aboutmenav.nativeElement, 'activer');
       this.renderer.addClass(this.projectnav.nativeElement, 'activer');
+      this.renderer.removeClass(this.experiencenav.nativeElement, 'activer');
+
     } else if(changes['item'].currentValue == 3) {
-      this.renderer.removeClass(this.contatnav.nativeElement, 'activer');
+      this.renderer.removeClass(this.aboutmenav.nativeElement, 'activer');
+      this.renderer.removeClass(this.projectnav.nativeElement, 'activer');
+      this.renderer.addClass(this.experiencenav.nativeElement, 'activer');
     }
   }
 }
