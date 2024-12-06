@@ -1,5 +1,4 @@
 import { ProjectModel } from '../models/project.model';
-import { TagModel } from '../models/tag.model';
 
 export const PROJECTS: ProjectModel[] = [
     {

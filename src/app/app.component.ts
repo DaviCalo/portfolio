@@ -8,6 +8,9 @@ import { SwitchProjectsComponent } from './components/switch-projects/switch-pro
 import { FilterPipe } from './pipes/filter.pipe';
 import { ProjectModel } from './models/project.model';
 import { PROJECTS } from './data/projects.data';
+import { ExperienceModel } from './models/experience.model';
+import { EXPERIENCE } from './data/experience.data';
+import { ExperienceCardComponent } from './components/experience-card/experience-card.component';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +19,7 @@ import { PROJECTS } from './data/projects.data';
     RouterOutlet, SocialLinksComponent, 
     NavigationComponent, ProjectCardComponent, 
     CommonModule, SwitchProjectsComponent,
-    FilterPipe
+    FilterPipe, ExperienceCardComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
@@ -26,6 +29,7 @@ export class AppComponent implements AfterViewInit {
   title = 'angular-portifolio';
 
   projects: ProjectModel[] = PROJECTS;
+  experiences: ExperienceModel[] = EXPERIENCE;
 
   filterValue: string = '';
 

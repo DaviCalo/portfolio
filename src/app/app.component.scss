@@ -97,14 +97,13 @@
     width: 100%;
     text-align: start;
     margin-bottom: 0.8rem;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
 }
 
 #articleaboutme{
     @include font-body-medium;
     cursor: default;
 }
-
 
 #project-article-main:hover .card-project:not(:hover) {
     opacity: 0.25;

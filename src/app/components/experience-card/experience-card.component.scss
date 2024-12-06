@@ -1,0 +1,50 @@
+@import '../../assets/styles/color.scss';
+@import '../../assets/styles/typography.scss';
+
+.container-experience{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+
+    &:hover{
+        backdrop-filter: blur(15px); 
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        transition: background 0.5s;
+    }
+}
+
+.period{
+    @include font-body-medium;
+    grid-column: 1;
+    grid-column-end: 3;
+    text-align: center;;
+}
+
+.information{
+    width: 100%;
+    grid-column: 3;
+    grid-column-end: 6;
+}
+
+.card-name-section-title{
+    @include font-body-large;
+    margin-bottom: 10px;
+}
+
+.card-name-section-subtitle{
+    @include font-body-medium;
+}
+
+.card-name-section-technology {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: start;
+    align-items: bottom;
+    gap: 10px;
+    margin-top: 15px;
+}

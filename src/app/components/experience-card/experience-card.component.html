@@ -1,0 +1,14 @@
+<a [href]="companyURL" class="container-experience" target="_blank">
+    <div class="period">
+        <span>{{startDate}} - {{endDate}}</span>
+    </div>
+    <div class="information">
+        <p class="card-name-section-title">{{title}}</p>
+        <span class="card-name-section-subtitle">{{description}}</span>
+        <div class="card-name-section-technology">
+            <div *ngFor="let tag of tags">
+                <img [src]="tag.iconUrl" [alt]="tag.title" [title]="tag.title">
+            </div>
+        </div>
+    </div>
+</a>
