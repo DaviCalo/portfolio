@@ -53,7 +53,6 @@ export class AppComponent implements AfterViewInit {
     } else {
       console.error('containerRight is not defined');
     }
-    this.onScroll();
   }
 
   onScroll(): void {

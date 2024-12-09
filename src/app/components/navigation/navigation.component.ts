@@ -1,4 +1,4 @@
-import { Component, Input, Renderer2, ElementRef, ViewChild, OnChanges, SimpleChanges, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Renderer2, ElementRef, ViewChild, OnChanges, SimpleChanges, Output, EventEmitter, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,31 +10,28 @@ import { CommonModule } from '@angular/common';
 })
 export class NavigationComponent implements OnChanges {
   @Input() item: number = 1;
-  @Output() itemSeleted = new EventEmitter<number>;
+  @Output() itemSeleted = new EventEmitter<number>();
 
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2, private cdr: ChangeDetectorRef) {}
 
   @ViewChild('aboutmenav', { static: true }) aboutmenav!: ElementRef;
   @ViewChild('projectnav', { static: true }) projectnav!: ElementRef;
   @ViewChild('experiencenav', { static: true }) experiencenav!: ElementRef;
 
-  onClickNav(intem: number): void {
-    this.itemSeleted.emit(intem);
+  onClickNav(item: number): void {
+    this.itemSeleted.emit(item);
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes['item'].currentValue.toString());
     if (changes['item'].currentValue == 1) {
       this.renderer.addClass(this.aboutmenav.nativeElement, 'activer');
       this.renderer.removeClass(this.projectnav.nativeElement, 'activer');
       this.renderer.removeClass(this.experiencenav.nativeElement, 'activer');
-
-    } else if(changes['item'].currentValue == 2) {
+    } else if (changes['item'].currentValue == 2) {
       this.renderer.removeClass(this.aboutmenav.nativeElement, 'activer');
       this.renderer.addClass(this.projectnav.nativeElement, 'activer');
       this.renderer.removeClass(this.experiencenav.nativeElement, 'activer');
-
-    } else if(changes['item'].currentValue == 3) {
+    } else if (changes['item'].currentValue == 3) {
       this.renderer.removeClass(this.aboutmenav.nativeElement, 'activer');
       this.renderer.removeClass(this.projectnav.nativeElement, 'activer');
       this.renderer.addClass(this.experiencenav.nativeElement, 'activer');
