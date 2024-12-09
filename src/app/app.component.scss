@@ -97,6 +97,9 @@
     width: 100%;
     text-align: start;
     margin-bottom: 0.8rem;
+}
+
+#projects-title, #articleexperience-title{
     margin-top: 3rem;
 }
 
@@ -105,6 +108,14 @@
     cursor: default;
 }
 
-#project-article-main:hover .card-project:not(:hover) {
-    opacity: 0.25;
+#project-article-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    & :hover .card-project:not(:hover) {
+        opacity: 0.25;
+    }
 }
