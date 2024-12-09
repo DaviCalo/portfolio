@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './navigation.component.scss'
 })
 export class NavigationComponent implements OnChanges {
-  @Input() item: number = 0;
+  @Input() item: number = 1;
   @Output() itemSeleted = new EventEmitter<number>;
 
   constructor(private renderer: Renderer2) {}
@@ -23,6 +23,7 @@ export class NavigationComponent implements OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
+    console.log(changes['item'].currentValue.toString());
     if (changes['item'].currentValue == 1) {
       this.renderer.addClass(this.aboutmenav.nativeElement, 'activer');
       this.renderer.removeClass(this.projectnav.nativeElement, 'activer');

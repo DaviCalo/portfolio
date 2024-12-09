@@ -1,4 +1,4 @@
-import { Component, ViewChild, AfterViewInit, ElementRef, HostListener } from '@angular/core';
+import { Component, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SocialLinksComponent } from './components/social-links-component/social-links-component.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
@@ -66,7 +66,7 @@ export class AppComponent implements AfterViewInit {
       
       if(scrollPosition >= section1Top && scrollPosition < section2Top) {
         this.activerNavItem = 1;
-      } else if(scrollPosition >= section2Top) {
+      } else if(scrollPosition >= section2Top && scrollPosition < section3Top) {
         this.activerNavItem = 2;
       } else if(scrollPosition >= section3Top) {
         this.activerNavItem = 3;
