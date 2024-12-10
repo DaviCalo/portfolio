@@ -20,6 +20,5 @@ export class SwitchProjectsComponent {
       this.inputValue = event.target.value;
       this.inputValueChange.emit(event.target.value);
     }
-    console.log(event.target.value + "" + this.inputValue);
   }
 }
