@@ -96,4 +96,27 @@ export const PROJECTS: ProjectModel[] = [
       deployUrl: 'https://github.com/Fortuness1/fortuness-oficial',
       type: 'BACKEND'
     },
+    {
+      imageUrl: 'https://raw.githubusercontent.com/DaviCalo/todo-mobile-app/main/app/src/main/res/drawable/home_screen.png',
+      imageDescription: 'Todo app',
+      title: 'Todo app',
+      subtitle: 'Uma aplicação simples de gerenciamento de tarefas construída com Kotlin e Android Studio. Este projeto demonstra a criação de um aplicativo de lista de tarefas com funcionalidades básicas como adicionar, editar e remover tarefas.',
+      tags: [
+        {
+          iconUrl: 'icons/kotlin-icon.svg',
+          title: 'Kotlin'
+        },
+        {
+          iconUrl: 'icons/jetpack-compose-icon.svg',
+          title: 'Jetpack Compose'
+        },
+        {
+          iconUrl: 'icons/android-studio-icon.svg',
+          title: 'Android Studio'
+        },
+      ],
+      gitUrl: 'https://github.com/DaviCalo/todo-app',
+      deployUrl: 'https://github.com/DaviCalo/todo-app',
+      type: 'MOBILE'
+    },
   ]
