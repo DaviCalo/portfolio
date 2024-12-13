@@ -7,8 +7,8 @@
         </div>
     </div>
     <div class="card-name-section">
-        <p class="card-name-section-title">{{title}}</p>
-        <p class="card-name-section-subtitle">{{subtitle}}</p>
+        <p class="card-name-section-title" [title]="title">{{title}}</p>
+        <p class="card-name-section-subtitle" [title]="subtitle">{{subtitle}}</p>
         <div class="card-name-section-technology">
             <div *ngFor="let tag of tags">
                 <img [src]="tag.iconUrl" [alt]="tag.title" [title]="tag.title">

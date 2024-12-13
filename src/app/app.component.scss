@@ -99,7 +99,7 @@
     margin-bottom: 0.8rem;
 }
 
-#projects-title, #articleexperience-title{
+#projects-title, #experiences-title{
     margin-top: 3rem;
 }
 
@@ -113,7 +113,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
 
     & :hover .card-project:not(:hover) {
         opacity: 0.25;

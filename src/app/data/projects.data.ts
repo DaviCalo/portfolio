@@ -64,9 +64,9 @@ export const PROJECTS: ProjectModel[] = [
     },
     {
       imageUrl: 'images/quester.png',
-      imageDescription: 'Imagem do projeto 1',
+      imageDescription: 'Quester Backend',
       title: 'Quester API',
-      subtitle: 'Uma aplicação web que permite que usuários criem partidas, criando perguntas e respostas para testar os conhecimentos de outros usuários. Um sistema intuitivo, seguro, rápido e adaptado às necessidades dos alunos e professores, proporcionando experiências de aprendizado e avaliação satisfatórias.',
+      subtitle: 'O backend de uma aplicação web chamada Quester, que permite que usuários criem partidas, criando perguntas e respostas para testar os conhecimentos de outros usuários. Um sistema intuitivo, seguro, rápido e adaptado às necessidades dos alunos e professores, proporcionando experiências de aprendizado e avaliação satisfatórias',
       tags: [
         {
           iconUrl: 'icons/node-icon.svg',
@@ -77,25 +77,25 @@ export const PROJECTS: ProjectModel[] = [
           title: 'MongoDB'
         }
       ],
-      gitUrl: 'https://github.com/Fortuness1/fortuness-oficial',
-      deployUrl: 'https://github.com/Fortuness1/fortuness-oficial',
+      gitUrl: 'https://github.com/DaviCalo/quester-backend',
+      deployUrl: 'https://github.com/DaviCalo/quester-backend',
       type: 'BACKEND'
     },
-    {
-      imageUrl: 'images/quester.png',
-      imageDescription: 'Imagem do projeto 1',
-      title: 'Quester API Web Socket',
-      subtitle: 'Uma aplicação web que permite que usuários criem partidas, criando perguntas e respostas para testar os conhecimentos de outros usuários. Um sistema intuitivo, seguro, rápido e adaptado às necessidades dos alunos e professores, proporcionando experiências de aprendizado e avaliação satisfatórias.',
-      tags: [
-        {
-          iconUrl: 'icons/node-icon.svg',
-          title: 'Node'
-        },
-      ],
-      gitUrl: 'https://github.com/Fortuness1/fortuness-oficial',
-      deployUrl: 'https://github.com/Fortuness1/fortuness-oficial',
-      type: 'BACKEND'
-    },
+    // {
+    //   imageUrl: 'images/quester.png',
+    //   imageDescription: 'Imagem do projeto 1',
+    //   title: 'Quester API Web Socket',
+    //   subtitle: 'Uma aplicação web que permite que usuários criem partidas, criando perguntas e respostas para testar os conhecimentos de outros usuários. Um sistema intuitivo, seguro, rápido e adaptado às necessidades dos alunos e professores, proporcionando experiências de aprendizado e avaliação satisfatórias.',
+    //   tags: [
+    //     {
+    //       iconUrl: 'icons/node-icon.svg',
+    //       title: 'Node'
+    //     },
+    //   ],
+    //   gitUrl: 'https://github.com/Fortuness1/fortuness-oficial',
+    //   deployUrl: 'https://github.com/Fortuness1/fortuness-oficial',
+    //   type: 'BACKEND'
+    // },
     {
       imageUrl: 'https://raw.githubusercontent.com/DaviCalo/todo-mobile-app/main/app/src/main/res/drawable/home_screen.png',
       imageDescription: 'Todo app',
@@ -118,5 +118,21 @@ export const PROJECTS: ProjectModel[] = [
       gitUrl: 'https://github.com/DaviCalo/todo-app',
       deployUrl: 'https://github.com/DaviCalo/todo-app',
       type: 'MOBILE'
+    },
+    {
+      imageUrl: 'images/demo.png',
+      imageDescription: 'Portifolio pessoal',
+      title: 'Portifolio',
+      subtitle: 'Portfólio pessoal em desenvolvimento, apresentando minhas habilidades e projetos. Este site demonstra minha capacidade de criar aplicações web dinâmicas e responsivas, proporcionando uma navegação intuitiva e interativa.',
+      tags: [
+        {
+          iconUrl: 'icons/angular-icon.svg',
+          title: 'Angular'
+        },
+        // Colocar mais tags
+      ],
+      gitUrl: 'https://github.com/DaviCalo/portifolio',
+      deployUrl: 'https://new-portifolio-chi.vercel.app/',
+      type: 'FRONTEND'
     },
   ]

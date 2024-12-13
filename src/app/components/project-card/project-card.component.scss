@@ -25,7 +25,6 @@
     & img {
         border-radius: 2px;
         object-fit: scale-down;
-        cursor: pointer;
     }
 }
 
@@ -95,15 +94,15 @@
     text-overflow: ellipsis;
 }
 
-.card-block img{
-    border-radius: 5px;
-    border: 2px solid rgba(0, 0, 0, 0);
-}
+// .action-project img{
+//     border-radius: 5px;
+//     border: 2px solid rgba(36, 36, 36, 0);
+// }
 
-.card-block:hover img{
-    border-radius: 5px;
-    border: 2px solid rgba(150, 150, 150, 0.1);
-}
+// .action-project:hover img{
+//     border-radius: 5px;
+//     border: 2px solid rgba(150, 150, 150, 0.1);
+// }
 
 .card-name-section-technology {
     display: flex;
