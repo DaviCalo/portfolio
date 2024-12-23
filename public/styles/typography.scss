@@ -11,7 +11,7 @@
 @mixin font-display-large {
   font-family: 'font-display-large';
   font-weight: 700;
-  font-size: 52px;
+  font-size: 3rem;
   color: $tertiary;
 }
 
@@ -27,7 +27,7 @@
 @mixin font-display-medium {
   font-family: 'font-display-small';
   font-weight: 600;
-  font-size: 32px;
+  font-size: 1.8rem;
   color: $tertiary;
 }
 
@@ -43,7 +43,7 @@
 @mixin font-display-small {
   font-family: 'font-display-small';
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1rem;
   color: $on-tertiary;
 }
 
@@ -59,7 +59,7 @@
 @mixin font-title-medium {
   font-family: 'font-title-medium';
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.2rem;
   color: $tertiary;
 }
 
@@ -75,7 +75,7 @@
 @mixin font-body-large {
   font-family: 'font-body-large';
   font-weight: 700;
-  font-size: 17px;
+  font-size: 1rem;
   color: $tertiary;
 }
 
@@ -91,7 +91,7 @@
 @mixin font-body-medium {
   font-family: 'font-body-medium';
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   color: $on-tertiary;
 }
 
@@ -107,7 +107,7 @@
 @mixin font-body-small {
   font-family: 'font-body-small';
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.9rem;
   color: $tertiary;
 }
 
@@ -122,7 +122,7 @@
 @mixin font-label-medium {
   font-family: 'font-label-medium';
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.8rem;
   color: $primary;
 }
 
