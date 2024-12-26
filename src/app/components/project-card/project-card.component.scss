@@ -2,8 +2,10 @@
 @import '../../../../public/styles/typography.scss';
 
 .card-project{
+    width: auto;
+    all: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
 
@@ -21,11 +23,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
-    & img {
-        border-radius: 2px;
-        object-fit: scale-down;
-    }
+.card-image{
+    border-radius: 4px;
+    object-fit: fill;
+    border: 1px solid rgba(218, 159, 229, 0.1);
 }
 
 .buttomcard{
@@ -37,7 +40,8 @@
     margin-top: 8px;
 }
 
-.buttomcard a{
+.button-action-alternative{
+    @include font-body-small;
     text-decoration: none;
     backdrop-filter: blur(15px); 
     background-color: rgba(150, 150, 150,0.1);
@@ -48,8 +52,7 @@
     justify-content: center;
     align-items: baseline;
     padding: 2px 0px;
-    width: 48%;
-    @include font-body-small;
+    width: 7rem;
 
     &:visited{
         border: 2px solid white;
@@ -85,7 +88,7 @@
 }
 
 .card-name-section-subtitle{
-    @include font-body-medium;
+    @include font-small;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -94,22 +97,21 @@
     text-overflow: ellipsis;
 }
 
-// .action-project img{
-//     border-radius: 5px;
-//     border: 2px solid rgba(36, 36, 36, 0);
-// }
-
-// .action-project:hover img{
-//     border-radius: 5px;
-//     border: 2px solid rgba(150, 150, 150, 0.1);
-// }
-
 .card-name-section-technology {
     display: flex;
     width: 100%;
-    flex-direction: row;
-    justify-content: start;
-    align-items: bottom;
-    gap: 10px;
-    margin-top: 10px;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 13px;
+
+    div{
+        display: flex;
+        justify-content: start;
+        gap: 10px;
+        align-items: top;
+
+        img{
+            width: 20px;
+        }
+    }
 }

@@ -126,3 +126,17 @@
   color: $primary;
 }
 
+// ============================== 
+// Font Small
+// ============================== 
+@font-face {
+  font-family: 'font-small';
+  src: url('../fonts/SegoeUI-VF/SegoeUI-VF.ttf') format('truetype');
+}
+
+@mixin font-small {
+  font-family: 'font-small';
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: $on-tertiary;
+}

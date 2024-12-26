@@ -4,7 +4,7 @@
 .container-experience{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     justify-content: center;
     padding: 10px;
     text-decoration: none;
@@ -27,7 +27,7 @@
 .information{
     width: 100%;
     grid-column: 3;
-    grid-column-end: 6;
+    grid-column-end: 9;
 }
 
 .card-name-section-title{

@@ -1,18 +1,17 @@
 <div class="card-project" [@cardAnimation]>
     <div class="action-project">
-        <img [src]="imageUrl" [alt]="imageDescrepiton" width="190" height="95">
-        <div class="buttomcard">
-            <a [href]="gitUrl" target="_blank">Code</a>
-            <a [href]="deployUrl" target="_blank">Deploy</a>
-        </div>
+        <img [src]="imageUrl" [alt]="imageDescrepiton" [height]="imageHeight" class="card-image" #cardImage>
     </div>
     <div class="card-name-section">
         <p class="card-name-section-title" [title]="title">{{title}}</p>
         <p class="card-name-section-subtitle" [title]="subtitle">{{subtitle}}</p>
         <div class="card-name-section-technology">
-            <div *ngFor="let tag of tags">
-                <img [src]="tag.iconUrl" [alt]="tag.title" [title]="tag.title">
+            <div>
+                <div *ngFor="let tag of tags">
+                    <img [src]="tag.iconUrl" [alt]="tag.title" [title]="tag.title">
+                </div>
             </div>
+            <a [href]="deployUrl" target="_blank" class="button-action-alternative">Code</a>
         </div>
     </div>
 </div>

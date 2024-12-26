@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TagModel } from '../../models/tag.model';
 import { animate, style, transition, trigger } from '@angular/animations';
@@ -21,7 +21,7 @@ import { animate, style, transition, trigger } from '@angular/animations';
     ]),
   ],
 })
-export class ProjectCardComponent {
+export class ProjectCardComponent implements OnInit {
   @Input() imageUrl: String = '';
   @Input() imageDescrepiton: String = '';
 
@@ -32,4 +32,22 @@ export class ProjectCardComponent {
 
   @Input() gitUrl: String = '';
   @Input() deployUrl: String = '';
+
+  @Input() type: String = '';
+
+  imageHeight: number = 95;
+
+  @ViewChild('cardImage') cardImage!: ElementRef;
+
+  ngOnInit() {
+    if (this.type === 'MOBILE') {
+      this.imageHeight = 175;
+    }
+  }
+
+  ngAfterViewInit() {
+    if (this.type !== 'MOBILE') {
+      this.cardImage.nativeElement.style.height = '95px';
+    }
+  }
 }

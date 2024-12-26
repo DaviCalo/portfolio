@@ -88,10 +88,11 @@
     flex-wrap: wrap;
     gap: 1.5rem;
 
-    & :hover .card-project:not(:hover) {
-        opacity: 0.25;
-    }
 }
+
+#project-article-main:hover .card-project:not(:hover) {
+    opacity: 0.50;
+}   
 
 @media screen and (max-width: 768px){
     #container{
