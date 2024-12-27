@@ -91,29 +91,6 @@ export const PROJECTS: ProjectModel[] = [
     // },
     {
       imageUrl: 'images/quester.png',
-      imageDescription: 'Imagem do projeto 1',
-      title: 'Quester Frontend',
-      subtitle: 'Uma aplicação web que permite que usuários criem partidas, criando perguntas e respostas para testar os conhecimentos de outros usuários. Um sistema intuitivo, seguro, rápido e adaptado às necessidades dos alunos e professores, proporcionando experiências de aprendizado e avaliação satisfatórias.',
-      tags: [
-        {
-          iconUrl: 'icons/html-icon.svg',
-          title: 'HTML'
-        },
-        {
-          iconUrl: 'icons/css-icon.svg',
-          title: 'CSS'
-        },
-        {
-          iconUrl: 'icons/javascript-icon.svg',
-          title: 'Javascript'
-        },
-      ],
-      gitUrl: 'https://github.com/Fortuness1/fortuness-oficial',
-      deployUrl: 'https://github.com/Fortuness1/fortuness-oficial',
-      type: 'FRONTEND'
-    },
-    {
-      imageUrl: 'images/quester.png',
       imageDescription: 'Quester Backend',
       title: 'Quester Backend',
       subtitle: 'O backend de uma aplicação web chamada Quester, que permite que usuários criem partidas, criando perguntas e respostas para testar os conhecimentos de outros usuários. Um sistema intuitivo, seguro, rápido e adaptado às necessidades dos alunos e professores, proporcionando experiências de aprendizado e avaliação satisfatórias',
@@ -130,6 +107,29 @@ export const PROJECTS: ProjectModel[] = [
       gitUrl: 'https://github.com/DaviCalo/quester-backend',
       deployUrl: 'https://github.com/DaviCalo/quester-backend',
       type: 'BACKEND'
+    },
+    {
+      imageUrl: 'images/quester.png',
+      imageDescription: 'Quester frontend screen shot',
+      title: 'Quester Frontend',
+      subtitle: 'Uma aplicação web que permite que usuários criem partidas, criando perguntas e respostas para testar os conhecimentos de outros usuários. Um sistema intuitivo, seguro, rápido e adaptado às necessidades dos alunos e professores, proporcionando experiências de aprendizado e avaliação satisfatórias.',
+      tags: [
+        {
+          iconUrl: 'icons/html-icon.svg',
+          title: 'HTML'
+        },
+        {
+          iconUrl: 'icons/css-icon.svg',
+          title: 'CSS'
+        },
+        {
+          iconUrl: 'icons/javascript-icon.svg',
+          title: 'Javascript'
+        },
+      ],
+      gitUrl: 'https://github.com/DaviCalo/quester-frontend',
+      deployUrl: 'https://github.com/DaviCalo/quester-frontend',
+      type: 'FRONTEND'
     },
     {
       imageUrl: 'images/sapinho.png',
