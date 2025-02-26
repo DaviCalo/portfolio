@@ -22,4 +22,25 @@ export const EXPERIENCE: ExperienceModel[] = [
             },
         ],
     },
+    {
+        companyURL: "https://www.bnb.gov.br/",
+        startDate: "FEV",
+        endDate: "Atual 2025",
+        title: "Estagiário em Análise de Dados - Banco do Nordeste",
+        description: "Responsável por transformar dados em relatórios valiosos, contribuindo para a definição de estratégias e decisões operacionais. Utilizando ferramentas como Power BI, SQL, Python, DAX.",
+        tags: [
+            {
+                iconUrl: 'icons/python-icon.svg',
+                title: 'Python'
+            },
+            {
+                iconUrl: 'icons/sql-icon.svg',
+                title: 'SQL'
+            },
+            {
+                iconUrl: 'icons/android-studio-icon.svg',
+                title: 'Android Studio'
+            },
+        ],
+    },
 ]
