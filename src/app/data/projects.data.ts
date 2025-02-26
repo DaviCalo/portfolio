@@ -25,6 +25,37 @@ export const PROJECTS: ProjectModel[] = [
       type: 'MOBILE'
     },
     {
+      imageUrl: 'images/stela.png',
+      imageDescription: 'Stela E-commerce Backend Architecture',
+      title: 'Stela - Backend',
+      subtitle: 'Plataforma de e-commerce de jogos digitais. Uma API REST robusta construída com Spring Boot, focada em segurança com JWT, escalabilidade e gestão de banco de dados via Flyway, totalmente containerizada com Docker.',
+      tags: [
+        {
+          iconUrl: 'icons/java-icon.svg',
+          title: 'Java 21'
+        },
+        {
+          iconUrl: 'icons/spring-boot-icon.svg',
+          title: 'Spring Boot'
+        },
+        {
+          iconUrl: 'icons/postgresql-icon.svg',
+          title: 'PostgreSQL'
+        },
+        {
+          iconUrl: 'icons/docker-icon.svg',
+          title: 'Docker'
+        },
+        {
+          iconUrl: 'icons/swagger-icon.svg',
+          title: 'Swagger'
+        },
+      ],
+      gitUrl: 'https://github.com/DaviCalo/stela-backend-spring',
+      deployUrl: 'https://github.com/DaviCalo/stela-backend-spring',
+      type: 'BACKEND'
+    },
+    {
       imageUrl: 'https://raw.githubusercontent.com/DaviCalo/todo-mobile-app/main/app/src/main/res/drawable/home_screen.png',
       imageDescription: 'Todo app Screen Shot',
       title: 'Todo App',
@@ -53,8 +84,8 @@ export const PROJECTS: ProjectModel[] = [
     },
     {
       imageUrl: 'images/demo.png',
-      imageDescription: 'Portifolio pessoal',
-      title: 'Portifolio',
+      imageDescription: 'Portfólio pessoal',
+      title: 'Portfólio',
       subtitle: 'Portfólio pessoal em desenvolvimento, apresentando minhas habilidades e projetos. Este site demonstra minha capacidade de criar aplicações web dinâmicas e responsivas, proporcionando uma navegação intuitiva e interativa.',
       tags: [
         {
@@ -66,7 +97,7 @@ export const PROJECTS: ProjectModel[] = [
           title: 'Angular'
         }, 
       ],
-      gitUrl: 'https://github.com/DaviCalo/portifolio',
+      gitUrl: 'https://github.com/DaviCalo/portfolio',
       deployUrl: 'https://new-portifolio-chi.vercel.app/',
       type: 'FRONTEND'
     },
