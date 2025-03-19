@@ -37,10 +37,6 @@ export const EXPERIENCE: ExperienceModel[] = [
                 iconUrl: 'icons/sql-icon.svg',
                 title: 'SQL'
             },
-            {
-                iconUrl: 'icons/android-studio-icon.svg',
-                title: 'Android Studio'
-            },
         ],
     },
 ]
