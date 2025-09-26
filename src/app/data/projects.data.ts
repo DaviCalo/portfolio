@@ -66,7 +66,7 @@ export const PROJECTS: ProjectModel[] = [
           title: 'Angular'
         }, 
       ],
-      gitUrl: 'https://github.com/DaviCalo/portifolio',
+      gitUrl: 'https://github.com/DaviCalo/portfolio',
       deployUrl: 'https://new-portifolio-chi.vercel.app/',
       type: 'FRONTEND'
     },
