@@ -53,8 +53,8 @@ export const PROJECTS: ProjectModel[] = [
     },
     {
       imageUrl: 'images/demo.png',
-      imageDescription: 'Portifolio pessoal',
-      title: 'Portifolio',
+      imageDescription: 'Portfólio pessoal',
+      title: 'Portfólio',
       subtitle: 'Portfólio pessoal em desenvolvimento, apresentando minhas habilidades e projetos. Este site demonstra minha capacidade de criar aplicações web dinâmicas e responsivas, proporcionando uma navegação intuitiva e interativa.',
       tags: [
         {

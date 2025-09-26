@@ -5,7 +5,7 @@ export const EXPERIENCE: ExperienceModel[] = [
         companyURL: "https://www.irede.org.br/",
         startDate: "JUL",
         endDate: "DEZ 2024",
-        title: "Bolsita em Desenvolvimento Android - IREDE",
+        title: "Bolsista em Desenvolvimento Android - IREDE",
         description: "Bolsista em desenvolvimento de aplicações para dispositivos móveis android. Utilizo tecnologias como Kotlin e Jetpack Compose.",
         tags: [
             {
