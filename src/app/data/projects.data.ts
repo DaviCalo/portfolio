@@ -27,6 +27,29 @@ export const PROJECTS: ProjectModel[] = [
     {
       imageUrl: 'images/stela.png',
       imageDescription: 'Stela E-commerce Backend Architecture',
+      title: 'Stela - Frotend',
+      subtitle: 'Plataforma de e-commerce de jogos digitais. Interface feita em React visando a usabilidade e conforto do utilizador',
+      tags: [
+       {
+          iconUrl: 'icons/html-icon.svg',
+          title: 'HTML'
+        },
+        {
+          iconUrl: 'icons/css-icon.svg',
+          title: 'CSS'
+        },
+        {
+          iconUrl: 'icons/javascript-icon.svg',
+          title: 'Javascript'
+        },
+      ],
+      gitUrl: 'https://github.com/DaviCalo/estela-frontend',
+      deployUrl: 'https://github.com/DaviCalo/estela-frontend',
+      type: 'FRONTEND'
+    },
+    {
+      imageUrl: 'images/stela.png',
+      imageDescription: 'Stela E-commerce Backend Architecture',
       title: 'Stela - Backend',
       subtitle: 'Plataforma de e-commerce de jogos digitais. Uma API REST robusta construída com Spring Boot, focada em segurança com JWT, escalabilidade e gestão de banco de dados via Flyway, totalmente containerizada com Docker.',
       tags: [
@@ -101,25 +124,6 @@ export const PROJECTS: ProjectModel[] = [
       deployUrl: 'https://new-portifolio-chi.vercel.app/',
       type: 'FRONTEND'
     },
-    // {
-    //   imageUrl: 'images/gravitation.png',
-    //   imageDescription: 'Imagem do projeto 1',
-    //   title: 'The Gravity',
-    //   subtitle: 'Mini simulação do movimento gravitacional entre a Terra e a lua. Usando a formula da gravitação universal. Apresentado como trabalho final de uma disciplina.',
-    //   tags: [
-    //     {
-    //       iconUrl: 'icons/p5-js-icon.svg',
-    //       title: 'P5.js'
-    //     },
-    //     {
-    //       iconUrl: 'icons/javascript-icon.svg',
-    //       title: 'Javascript'
-    //     },
-    //   ],
-    //   gitUrl: 'https://openprocessing.org/sketch/2095943',
-    //   deployUrl: 'https://openprocessing.org/sketch/2095943',
-    //   type: 'FRONTEND'
-    // },
     {
       imageUrl: 'images/quester.png',
       imageDescription: 'Quester Backend',

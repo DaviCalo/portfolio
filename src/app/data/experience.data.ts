@@ -42,7 +42,7 @@ export const EXPERIENCE: ExperienceModel[] = [
      {
         companyURL: "https://lsbd.ufc.br/",
         startDate: "FEV 2026",
-        endDate: "ATUAL 2026",
+        endDate: "ATUAL",
         title: "Estagiário em Desenvolvimento Web - Laboratório de Sistemas e Banco de Dados da UFC",
         description: "Responsável pelo desenvolvimento de aplicações robustas e escaláveis, utilizando .NET para a construção de backends eficientes e React com TypeScript para criar interfaces dinâmicas e tipadas. Atuo diretamente na execução das metas do projeto alocado , garantindo a entrega de código limpo.",
         tags: [
